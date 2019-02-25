@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>SIMEPRO</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+		<script src="js/jquery.js"></script>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<style type="text/css">
+			.clean { padding: 0; margin: 0;}
+		</style>
+
+</head>
+<body>
+	<section>
+		<header class="cabecalho">
+			<h3>SIMEPRO</h3>
+			<p>Monitoramento Térmico</p>
+		</header>
+		<div class="container">
+			<div class="painel-chart">
+				<canvas id="chart"></canvas>
+			</div>
+			<div class="painel-limits">
+				<form>
+					<input id="minimo" type="number" name="minimo" placeholder="Temperatura Mínima" value="15" onchange="onChangeMinimo()">
+					<input id="maximo" type="number" name="maximo" placeholder="Temperatura Máxima" value="35" onchange="onChangeMaximo()">
+				</form>
+			</div>
+		</div>
+		<footer>
+			<h4>SIMEPRO - Trabalho Interdisciplinar</h4>
+		</footer>
+	</section>
+				<p>
+				<h4>Temperatura</h4>
+				Valor: <strong><span id="Temperatura" ></span></strong>
+			</p>
+</body>
+<script src="js/chart-settings.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+</html>
